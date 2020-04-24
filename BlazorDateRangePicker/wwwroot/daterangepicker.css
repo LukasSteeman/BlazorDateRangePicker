@@ -174,7 +174,7 @@
   border-radius: 4px; }
 
 .daterangepicker td.active, .daterangepicker td.active:hover {
-  background-color: #357ebd;
+  background-color: #d43434;
   border-color: transparent;
   color: #fff; }
 
@@ -274,7 +274,7 @@
   background-color: #eee; }
 
 .daterangepicker .ranges li.active {
-  background-color: #08c;
+  background-color: #d43434;
   color: #fff; }
 
 /*  Larger Screen Styling */

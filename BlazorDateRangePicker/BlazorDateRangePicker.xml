@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlazorDateRangePicker</name>
+    </assembly>
+    <members>
+        <member name="M:BlazorDateRangePicker.ReflectionExtensions.CopyProperties``2(``0,``1)">
+            <summary>
+            Extension for 'Object' that copies the properties to a destination object.
+            https://stackoverflow.com/questions/930433/apply-properties-values-from-one-object-to-another-of-the-same-type-automaticall
+            </summary>
+            <param name="source">The source.</param>
+            <param name="destination">The destination.</param>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.Id">
+            <summary>
+            Guid for container id used for JSInterop 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.ParentId">
+            <summary>
+            Guid for parent id used for JSInterop 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.Config">
+            <summary>
+            Attach a named properties config object to this instance of datepicker
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.Attributes">
+            <summary>
+            All unmatched parameters will be passed to parent element
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.Ranges">
+            <summary>
+            Set predefined date ranges the user can select from. Each RangeItem.Name is the label for the range, and its Start and End value representing the bounds of the range.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.AutoApply">
+            <summary>
+            Hide the apply and cancel buttons, and automatically apply a new date range as soon as two dates are clicked.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.SingleDatePicker">
+            <summary>
+            Show only a single calendar to choose one date, instead of a range picker with two calendars. The start and end dates provided to your callback will be the same single date chosen. 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.ShowOnlyOneCalendar">
+            <summary>
+            Show only one calendar in the picker instead of two calendars.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.AlwaysShowCalendars">
+            <summary>
+            Normally, if you use the ranges option to specify pre-defined date ranges, calendars for choosing a custom date range are not shown until the user clicks "Custom Range". When this option is set to true, the calendars for choosing a custom date range are always shown instead. 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.ButtonClasses">
+            <summary>
+            CSS class names that will be added to both the apply and cancel buttons.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.ApplyButtonClasses">
+            <summary>
+            CSS class names that will be added only to the apply button. 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.CancelButtonClasses">
+            <summary>
+            CSS class names that will be added only to the cancel button. 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.StartDate">
+            <summary>
+            The beginning date of the initially selected date range.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.EndDate">
+            <summary>
+            The end date of the initially selected date range
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.DateFormat">
+            <summary>
+            Specify the format string to display dates, default is Culture.DateTimeFormat.ShortDatePattern
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.ShowWeekNumbers">
+            <summary>
+            Show localized week numbers at the start of each week on the calendars.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.ShowISOWeekNumbers">
+            <summary>
+            Show ISO week numbers at the start of each week on the calendars.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.LinkedCalendars">
+            <summary>
+            When enabled, the two calendars displayed will always be for two sequential months (i.e. January and February), and both will be advanced when clicking the left or right arrows above the calendars. When disabled, the two calendars can be individually advanced and display any month/year.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.ShowDropdowns">
+            <summary>
+            Show year and month select boxes above calendars to jump to a specific month and year.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.ShowCustomRangeLabel">
+            <summary>
+            Displays "Custom Range" at the end of the list of predefined ranges, when the ranges option is used. This option will be highlighted whenever the current date range selection does not match one of the predefined ranges. Clicking it will display the calendars to select a new range.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.Culture">
+            <summary> Specify the culture to display dates and text in. Default is CultureInfo.CurrentCulture.</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.WeekAbbreviation">
+            <summary>The text to display on the Week number heading</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.FirstDayOfWeek">
+            <summary>The day of the week to start from</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.MinDate">
+            <summary>The earliest date that can be selected, inclusive. A value of null indicates that there is no minimum date.</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.MaxDate">
+            <summary>The latest date that can be selected, inclusive. A value of null indicates that there is no maximum date.</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.MaxSpan">
+            <summary>
+            The maximum TimeSpan between the selected start and end dates. A value of null indicates that there is no limit.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.Visible">
+            <summary>
+            Picker popup visibility. Use Open() instead.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.CloseOnOutsideClick">
+            <summary>
+            Whether the picker should close on outside click
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.AutoAdjustCalendars">
+            <summary>
+            Whether the picker should pick months based on selected range
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.Opens">
+            <summary>
+            Whether the picker appears aligned to the left, to the right, or centered under the HTML element it's attached to.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.Drops">
+            <summary>
+            Whether the picker appears below (default) or above the HTML element it's attached to.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.DaysEnabledFunction">
+            <summary>
+            A function that is passed each date in the two calendars before they are displayed, and may return true or false to indicate whether that date should be available for selection or not. 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.CustomDateClass">
+            <summary>
+            String of CSS class name to apply to that custom date's calendar cell <seealso cref="P:BlazorDateRangePicker.DatePickerComponentBase.CustomDateFunction"/>
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.CustomDateFunction">
+            <summary>
+            A function that is passed each date in the two calendars before they are displayed, and may return a string or array of CSS class names to apply to that date's calendar cell.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.OnRangeSelect">
+            <summary>
+            Triggered when the apply button is clicked, or when a predefined range is clicked
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.OnOpened">
+            <summary>An event that is invoked when the DatePicker is opened.</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.OnClosed">
+            <summary>An event that is invoked when the DatePicker is closed.</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DatePickerComponentBase.OnCancel">
+            <summary>An event that is invoked on backdrop click (false) or cancel button click (true).</summary>
+        </member>
+        <member name="M:BlazorDateRangePicker.DatePickerComponentBase.Open">
+            <summary>
+            Show picker popup
+            </summary>
+        </member>
+        <member name="M:BlazorDateRangePicker.DatePickerComponentBase.Toggle">
+            <summary>
+            Toggle picker popup state
+            </summary>
+        </member>
+        <member name="M:BlazorDateRangePicker.DatePickerComponentBase.Close">
+            <summary>
+            Close picker popup
+            </summary>
+        </member>
+        <member name="M:BlazorDateRangePicker.DatePickerComponentBase.InvokeClickOutside">
+            <summary>
+            JSInvokable callback to handle outside click
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.Ranges">
+            <summary>
+            Set predefined date ranges the user can select from. Each RangeItem.Name is the label for the range, and its Start and End value representing the bounds of the range.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.AutoApply">
+            <summary>
+            Hide the apply and cancel buttons, and automatically apply a new date range as soon as two dates are clicked.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.SingleDatePicker">
+            <summary>
+            Show only a single calendar to choose one date, instead of a range picker with two calendars. The start and end dates provided to your callback will be the same single date chosen. 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.ShowOnlyOneCalendar">
+            <summary>
+            Show only one calendar in the picker instead of two calendars.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.AlwaysShowCalendars">
+            <summary>
+            Normally, if you use the ranges option to specify pre-defined date ranges, calendars for choosing a custom date range are not shown until the user clicks "Custom Range". When this option is set to true, the calendars for choosing a custom date range are always shown instead. 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.ButtonClasses">
+            <summary>
+            CSS class names that will be added to both the apply and cancel buttons.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.ApplyButtonClasses">
+            <summary>
+            CSS class names that will be added only to the apply button. 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.CancelButtonClasses">
+            <summary>
+            CSS class names that will be added only to the cancel button. 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.StartDate">
+            <summary>
+            The beginning date of the initially selected date range.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.EndDate">
+            <summary>
+            The end date of the initially selected date range
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.DateFormat">
+            <summary>
+            Specify the format string to display dates, default is Culture.DateTimeFormat.ShortDatePattern
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.ShowWeekNumbers">
+            <summary>
+            Show localized week numbers at the start of each week on the calendars.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.ShowISOWeekNumbers">
+            <summary>
+            Show ISO week numbers at the start of each week on the calendars.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.LinkedCalendars">
+            <summary>
+            When enabled, the two calendars displayed will always be for two sequential months (i.e. January and February), and both will be advanced when clicking the left or right arrows above the calendars. When disabled, the two calendars can be individually advanced and display any month/year.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.ShowDropdowns">
+            <summary>
+            Show year and month select boxes above calendars to jump to a specific month and year.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.ShowCustomRangeLabel">
+            <summary>
+            Displays "Custom Range" at the end of the list of predefined ranges, when the ranges option is used. This option will be highlighted whenever the current date range selection does not match one of the predefined ranges. Clicking it will display the calendars to select a new range.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.CloseOnOutsideClick">
+            <summary>
+            Whether the picker should close on outside click
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.AutoAdjustCalendars">
+            <summary>
+            Whether the picker should pick months based on selected range
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.Culture">
+            <summary> Specify the culture to display dates and text in. Default is CultureInfo.CurrentCulture.</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.WeekAbbreviation">
+            <summary>The text to display on the Week number heading</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.FirstDayOfWeek">
+            <summary>The day of the week to start from</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.MinDate">
+            <summary>The earliest date that can be selected, inclusive. A value of null indicates that there is no minimum date.</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.MaxDate">
+            <summary>The latest date that can be selected, inclusive. A value of null indicates that there is no maximum date.</summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.MaxSpan">
+            <summary>
+            The maximum TimeSpan between the selected start and end dates. A value of null indicates that there is no limit.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.Opens">
+            <summary>
+            Whether the picker appears aligned to the left, to the right, or centered under the HTML element it's attached to.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.Drops">
+            <summary>
+            Whether the picker appears below (default) or above the HTML element it's attached to.
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.DaysEnabledFunction">
+            <summary>
+            A function that is passed each date in the two calendars before they are displayed, and may return true or false to indicate whether that date should be available for selection or not. 
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.CustomDateClass">
+            <summary>
+            String of CSS class name to apply to that custom date's calendar cell <seealso cref="P:BlazorDateRangePicker.DateRangePickerConfig.CustomDateFunction"/>
+            </summary>
+        </member>
+        <member name="P:BlazorDateRangePicker.DateRangePickerConfig.CustomDateFunction">
+            <summary>
+            A function that is passed each date in the two calendars before they are displayed, and may return a string or array of CSS class names to apply to that date's calendar cell.
+            </summary>
+        </member>
+        <member name="M:BlazorDateRangePicker.DateRangePickerExtensions.AddDateRangePicker(Microsoft.Extensions.DependencyInjection.IServiceCollection,BlazorDateRangePicker.DateRangePickerConfig,System.String)">
+            <summary>
+            Adds a singleton <see cref="T:BlazorDateRangePicker.DateRangePickerConfig"/> instance to the DI
+            </summary>
+        </member>
+        <member name="M:BlazorDateRangePicker.DateRangePickerExtensions.AddDateRangePicker(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{BlazorDateRangePicker.DateRangePickerConfig},System.String)">
+            <summary>
+            Adds a singleton <see cref="T:BlazorDateRangePicker.DateRangePickerConfig"/> instance to the DI
+            </summary>
+        </member>
+    </members>
+</doc>
